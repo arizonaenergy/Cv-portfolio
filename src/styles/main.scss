@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Ultra&display=swap');
+@import "./variables.scss";
+@import './mixins.scss';
+@import "./functions.scss";
+@import "./header.scss";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body { 
+    background-color: $black;
+    font-family: $font-main;
+}
+
+
+header {
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: toRem(60);
+    border-bottom: 1px solid red;
+}
+
+nav ul {
+    display: flex;
+    gap: 16px;
+    list-style-type: none;
+}
+
+nav ul li:hover {
+    opacity: .7;
+}
+
+nav ul li span {
+    cursor: pointer;
+    font-size: toRem(18);
+    color: $text-color;
+}
