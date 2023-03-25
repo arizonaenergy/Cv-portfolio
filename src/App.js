@@ -1,11 +1,10 @@
 import Header from "./components/Header";
+import Nav from "./components/nav/Nav";
 
 function App() {
   return (
     <div className="App">
-      {/* HEADER */}
-      {/* CONTENT */}
-      {/* FOOTER */}
+      <Nav />
       <Header />
       <span>Hello world</span>
     </div>
