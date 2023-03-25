@@ -1,13 +1,13 @@
 import Content from "./components/Content";
 import Header from "./components/Header";
+import Nav from "./components/nav/Nav";
 import Work from "./components/Work";
+
 
 function App() {
   return (
     <div className="App">
-      {/* HEADER */}
-      {/* CONTENT */}
-      {/* FOOTER */}
+      <Nav />
       <Header />
       <Content />
       <Work />

@@ -1,8 +1,10 @@
 const Link = ({ link }) => {
   return (
     <>
-      <li className="link">
-        <span className="test">{link}</span>
+      <li className="test">
+        <a href="#" className="effect-5">
+          <span>{link}</span>
+        </a>
       </li>
     </>
   );
