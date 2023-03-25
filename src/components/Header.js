@@ -5,11 +5,11 @@ const Header = () => {
     <header>
       <nav>
         <ul>
-          <Link link={"Home"} />
-          <Link link={"Expertise"} />
-          <Link link={"Work"} />
-          <Link link={"Experience"} />
-          <Link link={"Contact"} />
+          <Link link={"// Home"} />
+          <Link link={"// Expertise"} />
+          <Link link={"// Work"} />
+          <Link link={"// Experience"} />
+          <Link link={"// Contact"} />
         </ul>
       </nav>
       <div>
