@@ -4,8 +4,10 @@ const Work = () => {
       <div className="leftside">
         <div>
           <h1>
-            My <br /> Work
+            My <br />
+            Work
           </h1>
+
           <p>
             Deployed scalable travel, event and telemedicine web and hybrid
             mobile apps using React SPA and PWA. Collaborated in 140+ projects
@@ -14,7 +16,13 @@ const Work = () => {
           </p>
         </div>
       </div>
-      <div className="rightside"></div>
+      <div className="rightside">
+        <img
+          className="img"
+          src="https://www.freecodecamp.org/news/content/images/2022/03/Screen-Shot-2022-03-25-at-4.34.17-PM.png"
+          alt="code"
+        />
+      </div>
     </div>
   );
 };
