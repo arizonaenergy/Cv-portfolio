@@ -6,7 +6,7 @@ const Content = () => {
     <div className="content">
       <h1 className="h1">My Expertise</h1>
       <div className="container">
-        <div className="test">
+        <div className="sides">
           <div className="side">
             <DiReact className="icons" />
             <p>Software Development</p>
@@ -17,7 +17,7 @@ const Content = () => {
             JavaScript, TypeScript.
           </div>
         </div>
-        <div className="test">
+        <div className="sides">
           <div className="side">
             <CiDesktop className="icons" />
             <p>Frontend Dev React</p>
@@ -27,7 +27,7 @@ const Content = () => {
             HTML, CSS, JS, React frameworks.
           </div>
         </div>
-        <div className="test">
+        <div className="sides">
           <div className="side">
             <BsLightningCharge className="icons" />
             <p>Flutter Dev Android, iOS</p>
