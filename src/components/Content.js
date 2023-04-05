@@ -3,9 +3,11 @@ import { CiDesktop } from "react-icons/ci";
 import { BsLightningCharge } from "react-icons/bs";
 const Content = () => {
   return (
-    <div className="content">
+    <div id="first-block" className="content">
       <h1 className="h1">My Expertise</h1>
-      <div className="container">
+
+      <div className="skills-container">
+        {/* 1 side */}
         <div className="sides">
           <div className="side">
             <DiReact className="icons" />
@@ -17,6 +19,8 @@ const Content = () => {
             JavaScript, TypeScript.
           </div>
         </div>
+
+        {/* 2 side */}
         <div className="sides">
           <div className="side">
             <CiDesktop className="icons" />
@@ -27,6 +31,8 @@ const Content = () => {
             HTML, CSS, JS, React frameworks.
           </div>
         </div>
+
+        {/* 3 side */}
         <div className="sides">
           <div className="side">
             <BsLightningCharge className="icons" />

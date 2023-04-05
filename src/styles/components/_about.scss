@@ -1,0 +1,17 @@
+.about {
+  min-height: 100vh;
+  color: #fff;
+
+  padding: 20px 0;
+
+  .h1-custom {
+    font-size: toRem(48);
+    text-align: center;
+  }
+
+  p {
+    font-size: toRem(24);
+    text-align: center;
+    line-height: 1.5;
+  }
+}

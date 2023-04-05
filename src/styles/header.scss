@@ -1,29 +1,57 @@
 header {
   display: flex;
   flex-direction: column;
+  padding: 0 10px;
   min-height: 100vh;
 
+  @include mq("tablet") {
+    padding: 0;
+  }
+
   div {
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+
+    flex: 1;
+
+    @include mq("tablet") {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
     h1 {
-      font-size: toRem(96);
+      font-size: toRem(32);
+      text-align: center;
       color: $primary-color-gpt;
       font-family: $font-headding;
       letter-spacing: toRem(10);
 
-      // text-shadow: 2px 2px #ff0000;
-      // text-shadow: 2px 2px #fff;
+      @include mq("tablet") {
+        font-size: toRem(96);
+        text-align: left;
+      }
     }
 
     h2 {
-      font-size: toRem(24);
+      font-size: toRem(20);
       letter-spacing: toRem(3);
+      text-align: center;
+      color: $text-color;
       font-family: $font-headding;
+
+      margin-top: 36px;
+
+      @include mq("tablet") {
+        // font-size: toRem(96);
+        // text-align: left;
+        margin-top: 0;
+      }
     }
   }
 }
