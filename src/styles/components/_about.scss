@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: toRem(30);
+  min-height: 100vh;
+}
+
+.about {
+  color: #f5f5f4;
+  display: flex;
+  font-size: toRem(70);
+  justify-content: first baseline;
+  padding: toRem(30);
+}
+p {
+  color: #f5f5f4;
+  display: flex;
+  justify-content: center;
+  padding: toRem(30);
+}

@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: toRem(30);
+  min-height: 100vh;
+
+  h1 {
+    color: #f5f5f4;
+    display: flex;
+    font-size: toRem(70);
+    justify-content: first baseline;
+    padding: toRem(30);
+  }
+
+  .components {
+    color: #f5f5f4;
+    display: flex;
+    font-size: toRem(30);
+    width: 50%;
+    justify-content: space-around;
+    padding: toRem(30);
+  }
+}

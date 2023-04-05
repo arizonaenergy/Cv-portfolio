@@ -30,7 +30,7 @@ const Work = () => {
           <div>
             <p style={{ color: "#f5f5f4" }}>JavaScript</p>
             <div className="cont">
-              <div class="skills js">70%</div>
+              <div className="skills js">70%</div>
             </div>
           </div>
           <div>
