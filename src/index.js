@@ -12,13 +12,12 @@ setTimeout(() => {
 }, 1000);
 
 window.addEventListener("scroll", (e) => {
-  console.log(e);
-  if (window.pageYOffset > 500) {
+  if (window.pageYOffset > 500 && window.innerWidth > 800) {
     if (navEl) {
       navEl["style"]["display"] = "none";
     }
   } else {
-    if (navEl) {
+    if (navEl && window.innerWidth > 800) {
       navEl["style"]["display"] = "flex";
     }
   }

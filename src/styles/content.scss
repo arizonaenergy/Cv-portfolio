@@ -1,10 +1,8 @@
 .content {
   display: flex;
   flex-direction: column;
-  //justify-content: center;
   align-items: center;
   gap: toRem(30);
-  // border: 1px solid yellow;
   min-height: 100vh;
 
   .h1 {
@@ -12,14 +10,13 @@
     justify-content: center;
     color: #fff;
     font-size: toRem(70);
-    margin-top: toRem(150);
+    text-align: center;
   }
 
-  .container {
+  .skills-container {
     display: flex;
-    justify-content: center;
     min-height: toRem(80);
-    width: 90%;
+    width: 100%;
     background: #000;
     flex-direction: column;
 
@@ -38,8 +35,9 @@
       height: calc(100% / 3);
       // justify-content: center;
       color: #fff;
-      padding: toRem(20);
+      // padding: toRem(20);
       border: 1px solid #fff;
+
       @include mq("phone") {
         background: #000;
         flex-direction: row;

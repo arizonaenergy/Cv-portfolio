@@ -11,12 +11,17 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $black;
   font-family: $font-main;
+  padding: 0 10px;
 }
 
-//TODO :TEST
+// What a fuck remove before git push
 .test {
   float: left;
   color: #fff;
@@ -41,5 +46,47 @@ a > span {
     content: "";
     position: absolute;
     transition: transform 0.5s ease;
+  }
+}
+
+.scroll-downs {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateY(-200%) translateX(-50%);
+
+  width: 34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid $primary-color-gpt;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 4px;
+  border-radius: 25%;
+  background-color: $primary-color-gpt;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
   }
 }
