@@ -1,67 +1,38 @@
 .content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: toRem(30);
+  gap: toRem(60);
   min-height: 100vh;
-
-  .h1 {
-    display: flex;
-    justify-content: center;
-    color: #fff;
-    font-size: toRem(70);
-    text-align: center;
-  }
 
   .skills-container {
     display: flex;
-    min-height: toRem(80);
     width: 100%;
-    background: #000;
     flex-direction: column;
-
-    @include mq("phone") {
-      background: #000;
-      flex-direction: row;
-    }
-
-    //height: calc(100%/3);
-    // flex-direction: column;
-    border: 1px solid #fff;
+    align-items: center;
+    gap: toRem(30);
 
     .sides {
       display: flex;
-      flex-wrap: wrap;
-      height: calc(100% / 3);
-      // justify-content: center;
+      flex-direction: column;
       color: #fff;
-      // padding: toRem(20);
       border: 1px solid #fff;
 
-      @include mq("phone") {
-        background: #000;
-        flex-direction: row;
-        width: calc(100% / 3);
-      }
+      padding: 20px;
 
       .icons {
         width: toRem(100);
         height: toRem(100);
       }
+
       .side {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        // text-align: center;
 
         p {
           font-size: toRem(30);
           text-align: center;
-        }
-        div {
-          display: flex;
-          font-size: toRem(20);
         }
       }
     }

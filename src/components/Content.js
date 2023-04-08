@@ -4,10 +4,8 @@ import { BsLightningCharge } from "react-icons/bs";
 const Content = () => {
   return (
     <div id="first-block" className="content">
-      <h1 className="h1">My Expertise</h1>
-
+      <h1 className="block-title">My Expertise</h1>
       <div className="skills-container">
-        {/* 1 side */}
         <div className="sides">
           <div className="side">
             <DiReact className="icons" />
