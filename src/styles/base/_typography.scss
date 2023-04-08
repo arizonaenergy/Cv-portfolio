@@ -1,0 +1,47 @@
+.header-title {
+  font-size: toRem(32);
+  text-align: center;
+  color: $primary-color-gpt;
+  font-family: $font-headding;
+  letter-spacing: toRem(10);
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+
+  @include mq("tablet") {
+    font-size: toRem(96);
+    text-align: left;
+  }
+}
+
+.header-sub {
+  font-size: toRem(20);
+  letter-spacing: toRem(3);
+  text-align: center;
+  color: $text-color;
+  font-family: $font-headding;
+
+  margin-top: 36px;
+
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+
+  @include mq("tablet") {
+    margin-top: 0;
+  }
+}
+
+.block-title {
+  font-size: toRem(48);
+  text-align: center;
+  color: $text-color;
+}
+
+.block-text {
+  font-size: toRem(24);
+  text-align: center;
+  line-height: 1.5;
+  color: $text-color;
+}

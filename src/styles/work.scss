@@ -1,97 +1,47 @@
 .container {
   display: flex;
   flex-direction: column;
-  // border: toRem(1) solid red;
-  min-height: 70vh;
-
-  @include mq("phone") {
-    flex-direction: row;
-
-    // background: #000;
-  }
+  min-height: 100vh;
 }
 
 .leftside {
   display: flex;
-  width: 50%;
-  //justify-content: center;
-
-  color: #fff;
-  @include mq("phone") {
-    padding: 30px 0;
-  }
-
-  div {
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
-    padding: 30px;
-
-    @include mq("tablet") {
-      background: #000;
-      width: 100%;
-    }
-
-    h1 {
-      display: flex;
-      font-size: toRem(80);
-      background: #000;
-      @include mq("phone") {
-        background: #000;
-        width: 100%;
-      }
-    }
-    p {
-      display: flex;
-      font-size: toRem(20);
-      @include mq("phone") {
-        background: #000;
-        width: 100%;
-      }
-    }
-  }
+  color: $text-color;
 }
 
 .rightside {
-  width: 50%;
-  display: flex;
-
-  .cont {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: #ddd;
-  }
-
-  .skills {
-    text-align: right;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-  }
-
-  .html {
-    width: 90%;
-    background-color: #ff0000;
-  }
-  .css {
-    width: 85%;
-    background-color: #ff0000;
-  }
-  .js {
-    width: 70%;
-    background-color: #ff0000;
-  }
-  .react {
-    width: 75%;
-    background-color: #ff0000;
-  }
-}
-
-.test-w {
   display: flex;
   flex-direction: column;
-  gap: toRem(32);
-  width: 80%;
-  border-radius: 10px;
+  gap: toRem(30);
+  width: 100%;
+}
+
+.cont {
+  flex: 1;
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {
+  width: 90%;
+  background-color: #ff0000;
+}
+.css {
+  width: 85%;
+  background-color: #ff0000;
+}
+.js {
+  width: 70%;
+  background-color: #ff0000;
+}
+.react {
+  width: 75%;
+  background-color: #ff0000;
 }

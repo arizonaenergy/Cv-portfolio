@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Ultra&display=swap");
 @import "abstracts/_abstracts";
+@import "base/_base";
 @import "components/_components";
 @import "./header.scss";
 @import "./content.scss";
@@ -19,6 +20,10 @@ body {
   background-color: $black;
   font-family: $font-main;
   padding: 0 10px;
+
+  @include mq("phone") {
+    padding: 0;
+  }
 }
 
 // What a fuck remove before git push
@@ -76,17 +81,4 @@ a > span {
   animation-duration: 2.2s;
   animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
   animation-iteration-count: infinite;
-}
-@keyframes scroll {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(15px);
-    opacity: 0;
-  }
 }

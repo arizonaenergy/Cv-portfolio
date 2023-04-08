@@ -15,44 +15,5 @@ header {
     align-items: center;
 
     flex: 1;
-
-    @include mq("tablet") {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-    }
-
-    h1 {
-      font-size: toRem(32);
-      text-align: center;
-      color: $primary-color-gpt;
-      font-family: $font-headding;
-      letter-spacing: toRem(10);
-
-      @include mq("tablet") {
-        font-size: toRem(96);
-        text-align: left;
-      }
-    }
-
-    h2 {
-      font-size: toRem(20);
-      letter-spacing: toRem(3);
-      text-align: center;
-      color: $text-color;
-      font-family: $font-headding;
-
-      margin-top: 36px;
-
-      @include mq("tablet") {
-        // font-size: toRem(96);
-        // text-align: left;
-        margin-top: 0;
-      }
-      color: #f5f5f4;
-    }
   }
 }
