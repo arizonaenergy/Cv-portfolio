@@ -3,30 +3,32 @@ import { CiDesktop } from "react-icons/ci";
 import { BsLightningCharge } from "react-icons/bs";
 const Content = () => {
   return (
-    <div id="first-block" className="content">
+    <div id="expertise-section" className="content">
       <h1 className="block-title">My Expertise</h1>
       <div className="skills-container">
         <div className="sides">
           <div className="side">
-            <DiReact className="icons" />
+            <CiDesktop className="icons" />
             <p>Software Development</p>
           </div>
 
-          <div>
-            Experienced in both functional and OOP: Dart, Python, Java,
-            JavaScript, TypeScript.
+          <div className="subtitle">
+            <p>
+              I have the knowledge of Html, Css, Javascript, React, Write tests.
+            </p>
           </div>
         </div>
 
         {/* 2 side */}
         <div className="sides">
           <div className="side">
-            <CiDesktop className="icons" />
+            <DiReact className="icons" />
             <p>Frontend Dev React</p>
           </div>
-          <div>
-            Passionate about UI/UX. Over 1 years of development experience in
-            HTML, CSS, JS, React frameworks.
+          <div className="subtitle">
+            <p>
+              I have knowledge of React framework. Props, Hooks Redux and etc.
+            </p>
           </div>
         </div>
 
@@ -34,12 +36,14 @@ const Content = () => {
         <div className="sides">
           <div className="side">
             <BsLightningCharge className="icons" />
-            <p>Flutter Dev Android, iOS</p>
+            <p>A Knowledge of UI / UX</p>
           </div>
 
-          <div>
-            Skilled in developing hybrid mobile apps and cross-platform
-            solutions using the Flutter framework.
+          <div className="subtitle">
+            <p>
+              I have the knowledge of UI UX experience, how the site worked also
+              how make it faster and user friendly.
+            </p>
           </div>
         </div>
       </div>

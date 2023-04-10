@@ -1,12 +1,15 @@
-.container {
+.container-work {
   display: flex;
   flex-direction: column;
+  gap: toRem(45);
   min-height: 100vh;
 }
 
 .leftside {
   display: flex;
+  justify-content: center;
   color: $text-color;
+  padding-top: toRem(60);
 }
 
 .rightside {
@@ -24,8 +27,7 @@
 
 .skills {
   text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0;
   color: white;
 }
 

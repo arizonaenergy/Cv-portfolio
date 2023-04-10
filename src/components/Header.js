@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <header>
       <div>
-        {/* add animation from left */}
+        \{/* add animation from left */}
         <h1 className="header-title">DARA MININA</h1>
         {/* add animation from right */}
         <h2 className="header-sub">
