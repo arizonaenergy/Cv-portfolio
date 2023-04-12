@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Contacts from "./components/Contacts";
 import Content from "./components/Content";
 import Header from "./components/Header";
 import Nav from "./components/nav/Nav";
@@ -9,9 +10,12 @@ function App() {
     <div className="App">
       <Nav />
       <Header />
-      <About />
-      <Content />
-      <Work />
+      <div className="acw-container">
+        <About />
+        <Content />
+        <Work />
+        <Contacts />
+      </div>
     </div>
   );
 }

@@ -9,7 +9,11 @@
   animation-duration: 1s;
   animation-timing-function: ease-out;
 
-  @include mq("tablet") {
+  @include mq("tablet-small") {
+    font-size: toRem(64);
+  }
+
+  @include mq("desktop") {
     font-size: toRem(96);
     text-align: left;
   }
@@ -27,6 +31,10 @@
   animation-name: moveInRight;
   animation-duration: 1s;
   animation-timing-function: ease-out;
+
+  @include mq("tablet-small") {
+    font-size: toRem(25);
+  }
 
   @include mq("tablet") {
     margin-top: 0;
